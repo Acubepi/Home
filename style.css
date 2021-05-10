@@ -125,7 +125,7 @@ section .title::after {
 }
 
 .navbar .logo a span {
-    color: #006972;
+    color: #25ced1;
     transition: all 0.3s ease;
 }
 
@@ -240,7 +240,7 @@ section .title::after {
 
 .home .home-content a {
     display: inline-block;
-    background: #006972;
+    background: #25ced1;
     color: #fff;
     font-size: 25px;
     padding: 12px 36px;
