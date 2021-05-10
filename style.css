@@ -262,7 +262,7 @@ section .title::after {
 
 
 .about .about-content .left {
-    width: 50%;
+    width: 45%;
 }
 
 .about .about-content .left .text {
@@ -276,7 +276,7 @@ section .title::after {
 }
 
 .about .about-content .right {
-    width: 50%;
+    width: 45%;
 }
 
 .about .about-content .right .text {
