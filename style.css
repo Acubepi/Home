@@ -125,7 +125,7 @@ section .title::after {
 }
 
 .navbar .logo a span {
-    color: #25CED1;
+    color: #006972;
     transition: all 0.3s ease;
 }
 
@@ -148,7 +148,7 @@ section .title::after {
 }
 
 .navbar .menu li a:hover {
-    color: #25ced1;
+    color: #006972;
 }
 
 .navbar.sticky .menu li a:hover {
@@ -169,7 +169,7 @@ section .title::after {
     position: fixed;
     height: 45px;
     width: 42px;
-    background: #25ced1;
+    background: #006972;
     right: 30px;
     bottom: 10px;
     text-align: center;
@@ -240,7 +240,7 @@ section .title::after {
 
 .home .home-content a {
     display: inline-block;
-    background: #25ced1;
+    background: #006972;
     color: #fff;
     font-size: 25px;
     padding: 12px 36px;
@@ -328,7 +328,7 @@ section .title::after {
 .services .title::after,
 .teams .title::after {
     background: #111;
-    content: "what i provide";
+    content: "chatbot platforms";
 }
 
 .services .serv-content .card {
@@ -342,7 +342,7 @@ section .title::after {
 }
 
 .services .serv-content .card:hover {
-    background: crimson;
+    background: #006972;
 }
 
 .services .serv-content .card .box {
@@ -355,7 +355,7 @@ section .title::after {
 
 .services .serv-content .card i {
     font-size: 50px;
-    color: crimson;
+    color: #006972;
     transition: color 0.3s ease;
 }
 
