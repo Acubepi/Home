@@ -75,7 +75,6 @@ section .title {
 }
 
 section .title::before {
-    content: "";
     position: absolute;
     bottom: 0px;
     left: 50%;
@@ -331,7 +330,6 @@ section .title::after {
     background: #111;
     content: "chatbot platforms";
 }
-
 
 .flip-card {
     background-color: transparent;
@@ -791,14 +789,14 @@ footer span a:hover {
         width: 100%;
     }
     .about .about-content .left {
-        display: flex;
+        flex: 100%;
         justify-content: center;
         margin: 0 auto 60px;
     }
     .about .about-content .right {
         flex: 100%;
     }
-    .services .serv-content .card {
+    .services .serv-content .flip-card {
         width: calc(50% - 10px);
         margin-bottom: 20px;
     }
@@ -822,7 +820,7 @@ footer span a:hover {
     .home .home-content a {
         font-size: 20px;
     }
-    .services .serv-content .card {
+    .services .serv-content .flip-card {
         width: 100%;
     }
 }
