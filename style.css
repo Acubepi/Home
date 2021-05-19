@@ -46,8 +46,8 @@ section {
 
 .about,
 .services,
-.skills,
-.teams,
+.team,
+.client-rev,
 .contact,
 footer {
     font-family: 'Poppins', sans-serif;
@@ -55,13 +55,14 @@ footer {
 
 .about .about-content,
 .services .serv-content,
-.skills .skills-content,
+.team .team-content,
 .contact .contact-content {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 }
+
 
 section .title {
     position: relative;
@@ -315,42 +316,97 @@ section .title::after {
 /* services section styling */
 
 .services,
-.teams {
+.client-rev {
     color: #fff;
     background: #111;
 }
 
 .services .title::before,
-.teams .title::before {
+.client-rev .title::before {
     background: #fff;
 }
 
 .services .title::after,
-.teams .title::after {
+.client-rev .title::after {
     background: #111;
     content: "chatbot platforms";
 }
 
-.services .serv-content .card {
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
     width: calc(33% - 20px);
-    background: #222;
+      text-align: center;
+      border-radius: 6px;
+      
+      cursor: pointer;
+      transition: all 0.3s ease;
+      
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
     text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    
     border-radius: 6px;
-    padding: 35px 25px;
-    cursor: pointer;
-    transition: all 0.3s ease;
+  
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 6px;
+  }
+  
+  .flip-card-front {
+    background-color:#222;
+    color: white;
+    border-radius: 6px;
+    padding: 20% 10%;
+
+  }
+   .flip-card-front i {
+    font-size: 50px;
+    color: #006972;
+    transition: color 0.3s ease;
 }
 
-.services .serv-content .card:hover {
-    background: #006972;
-}
+  .flip-card-front p {
+    font-size: 30px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+  }
+  
+  .flip-card-back {
+    background-color: #006972;
+    color: white;
+    transform: rotateY(180deg);
+    border-radius: 6px;
+    padding: 20% 10%;
+  }
+
+  .flip-card-back p {
+    font-size: 30px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+  } 
 
 .services .serv-content .card .box {
     transition: all 0.3s ease;
-}
-
-.services .serv-content .card:hover .box {
-    transform: scale(1.05);
 }
 
 .services .serv-content .card i {
@@ -370,27 +426,27 @@ section .title::after {
 }
 
 
-/* skills section styling */
+/* team section styling */
 
-.skills .title::after {
-    content: "what i know";
+.team .title::after {
+    content: "members";
 }
 
-.skills .skills-content .column {
+.team .team-content .column {
     width: calc(50% - 30px);
 }
 
-.skills .skills-content .left .text {
+.team .team-content .left .text {
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 10px;
 }
 
-.skills .skills-content .left p {
+.team .team-content .left p {
     text-align: justify;
 }
 
-.skills .skills-content .left a {
+.team .team-content .left a {
     display: inline-block;
     background: crimson;
     color: #fff;
@@ -403,35 +459,35 @@ section .title::after {
     transition: all 0.3s ease;
 }
 
-.skills .skills-content .left a:hover {
+.team .team-content .left a:hover {
     color: crimson;
     background: none;
 }
 
-.skills .skills-content .right .bars {
+.team .team-content .right .bars {
     margin-bottom: 15px;
 }
 
-.skills .skills-content .right .info {
+.team .team-content .right .info {
     display: flex;
     margin-bottom: 5px;
     align-items: center;
     justify-content: space-between;
 }
 
-.skills .skills-content .right span {
+.team .team-content .right span {
     font-weight: 500;
     font-size: 18px;
 }
 
-.skills .skills-content .right .line {
+.team .team-content .right .line {
     height: 5px;
     width: 100%;
     background: lightgrey;
     position: relative;
 }
 
-.skills .skills-content .right .line::before {
+.team .team-content .right .line::before {
     content: "";
     position: absolute;
     height: 100%;
@@ -440,34 +496,34 @@ section .title::after {
     background: crimson;
 }
 
-.skills-content .right .html::before {
+.team-content .right .html::before {
     width: 90%;
 }
 
-.skills-content .right .css::before {
+.team-content .right .css::before {
     width: 60%;
 }
 
-.skills-content .right .js::before {
+.team-content .right .js::before {
     width: 80%;
 }
 
-.skills-content .right .php::before {
+.team-content .right .php::before {
     width: 50%;
 }
 
-.skills-content .right .mysql::before {
+.team-content .right .mysql::before {
     width: 70%;
 }
 
 
-/* teams section styling */
+/* client-rev section styling */
 
-.teams .title::after {
-    content: "who with me";
+.client-rev .title::after {
+    content: "what people have said";
 }
 
-.teams .carousel .card {
+.client-rev .carousel .card {
     background: #222;
     border-radius: 6px;
     padding: 25px 35px;
@@ -476,11 +532,11 @@ section .title::after {
     transition: all 0.3s ease;
 }
 
-.teams .carousel .card:hover {
+.client-rev .carousel .card:hover {
     background: crimson;
 }
 
-.teams .carousel .card .box {
+.client-rev .carousel .card .box {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -488,17 +544,17 @@ section .title::after {
     transition: all 0.3s ease;
 }
 
-.teams .carousel .card:hover .box {
+.client-rev .carousel .card:hover .box {
     transform: scale(1.05);
 }
 
-.teams .carousel .card .text {
+.client-rev .carousel .card .text {
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
 
-.teams .carousel .card img {
+.client-rev .carousel .card img {
     height: 150px;
     width: 150px;
     object-fit: cover;
@@ -507,7 +563,7 @@ section .title::after {
     transition: all 0.3s ease;
 }
 
-.teams .carousel .card:hover img {
+.client-rev .carousel .card:hover img {
     border-color: #fff;
 }
 
@@ -746,7 +802,7 @@ footer span a:hover {
         width: calc(50% - 10px);
         margin-bottom: 20px;
     }
-    .skills .skills-content .column,
+    .team .team-content .column,
     .contact .contact-content .column {
         width: 100%;
         margin-bottom: 35px;
@@ -779,7 +835,7 @@ footer span a:hover {
         font-size: 27px;
     }
     .about .about-content .right .text,
-    .skills .skills-content .left .text {
+    .team .team-content .left .text {
         font-size: 19px;
     }
     .contact .right form .fields {
