@@ -35,12 +35,12 @@ section{
     padding: 0 80px;
     margin: auto;
 }
-.about, .services, .skills, .teams, .contact, footer{
+.about, .services, .reviews, .teams, .contact, footer{
     font-family: 'Poppins', sans-serif;
 }
 .about .about-content,
 .services .serv-content,
-.skills .skills-content,
+.reviews .reviews-content,
 .contact .contact-content{
     display: flex;
     flex-wrap: wrap;
@@ -373,23 +373,23 @@ section .title::after{
     margin: 10px 0 7px 0;
 }
 
-/* skills section styling */
+/* reviews section styling */
 
-.skills .title::after{
-    content: "what i know";
+.reviews .title::after{
+    content: "Reviews";
 }
-.skills .skills-content .column{
+.reviews .reviews-content .column{
     width: calc(50% - 30px);
 }
-.skills .skills-content .left .text{
+.reviews .reviews-content .left .text{
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 10px;
 }
-.skills .skills-content .left p{
+.reviews .reviews-content .left p{
     text-align: justify;
 }
-.skills .skills-content .left a{
+.reviews .reviews-content .left a{
     display: inline-block;
     background: #006972;
     color: #fff;
@@ -401,30 +401,30 @@ section .title::after{
     border: 2px solid #006972;
     transition: all 0.3s ease;
 }
-.skills .skills-content .left a:hover{
+.reviews .reviews-content .left a:hover{
     color: #006972;
     background: none;
 }
-.skills .skills-content .right .bars{
+.reviews .reviews-content .right .bars{
     margin-bottom: 15px;
 }
-.skills .skills-content .right .info{
+.reviews .reviews-content .right .info{
     display: flex;
     margin-bottom: 5px;
     align-items: center;
     justify-content: space-between;
 }
-.skills .skills-content .right span{
+.reviews .reviews-content .right span{
     font-weight: 500;
     font-size: 18px;
 }
-.skills .skills-content .right .line{
+.reviews .reviews-content .right .line{
     height: 5px;
     width: 100%;
     background: lightgrey;
     position: relative;
 }
-.skills .skills-content .right .line::before{
+.reviews .reviews-content .right .line::before{
     content: "";
     position: absolute;
     height: 100%;
@@ -432,25 +432,25 @@ section .title::after{
     top: 0;
     background: #006972;
 }
-.skills-content .right .html::before{
+.reviews-content .right .html::before{
     width: 90%;
 }
-.skills-content .right .css::before{
+.reviews-content .right .css::before{
     width: 60%;
 }
-.skills-content .right .js::before{
+.reviews-content .right .js::before{
     width: 80%;
 }
-.skills-content .right .php::before{
+.reviews-content .right .php::before{
     width: 50%;
 }
-.skills-content .right .mysql::before{
+.reviews-content .right .mysql::before{
     width: 70%;
 }
 
 /* teams section styling */
 .teams .title::after{
-    content: "who with me";
+    content: "who we are";
 }
 .teams .carousel .card{
     background: #222;
@@ -694,7 +694,7 @@ footer span a:hover{
         width: calc(50% - 10px);
         margin-bottom: 20px;
     }
-    .skills .skills-content .column,
+    .reviews .reviews-content .column,
     .contact .contact-content .column{
         width: 100%;
         margin-bottom: 35px;
@@ -727,7 +727,7 @@ footer span a:hover{
         font-size: 27px;
     }
     .about .about-content .right .text,
-    .skills .skills-content .left .text{
+    .reviews .reviews-content .left .text{
         font-size: 19px;
     }
     .contact .right form .fields{
