@@ -41,12 +41,6 @@ $(document).ready(function() {
         loop: true
     });
 
-    var typed = new Typed(".typing-2", {
-        strings: ["Enhance Websites.", "Engage Viewers.", "Solve User Queries.", "And Much More."],
-        typeSpeed: 50,
-        backSpeed: 70,
-        loop: true
-    });
 
     // owl carousel script
     $('.carousel').owlCarousel({
