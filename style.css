@@ -89,7 +89,7 @@ section .title::after{
 
 .navbar.sticky {
     padding: 15px 0;
-    background: #006972;
+    background: #340d20; opacity: 90%;
 }
 
 .navbar .max-width {
@@ -146,7 +146,8 @@ section .title::after{
     position: fixed;
     height: 45px;
     width: 42px;
-    background: #006972;
+    background: #340d20; opacity: 70%;
+ 
     right: 30px;
     bottom: 10px;
     text-align: center;
