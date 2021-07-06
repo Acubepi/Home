@@ -35,12 +35,12 @@ section{
     padding: 0 80px;
     margin: auto;
 }
-.about, .services, .reviews, .teams, .contact, footer{
+.about, .services, .projects, .teams, .contact, footer{
     font-family: 'Poppins', sans-serif;
 }
 .about .about-content,
 .services .serv-content,
-.reviews .reviews-content,
+.projects .projects-content,
 .contact .contact-content{
     display: flex;
     flex-wrap: wrap;
@@ -374,23 +374,23 @@ section .title::after{
     margin: 10px 0 7px 0;
 }
 
-/* reviews section styling */
+/* projects section styling */
 
-.reviews .title::after{
-    content: "Reviews";
+.projects .title::after{
+    content: "projects";
 }
-.reviews .reviews-content .column{
+.projects .projects-content .column{
     width: calc(50% - 30px);
 }
-.reviews .reviews-content .left .text{
+.projects .projects-content .left .text{
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 10px;
 }
-.reviews .reviews-content .left p{
+.projects .projects-content .left p{
     text-align: justify;
 }
-.reviews .reviews-content .left a{
+.projects .projects-content .left a{
     display: inline-block;
     background: #006972;
     color: #fff;
@@ -402,30 +402,30 @@ section .title::after{
     border: 2px solid #006972;
     transition: all 0.3s ease;
 }
-.reviews .reviews-content .left a:hover{
+.projects .projects-content .left a:hover{
     color: #006972;
     background: none;
 }
-.reviews .reviews-content .right .bars{
+.projects .projects-content .right .bars{
     margin-bottom: 15px;
 }
-.reviews .reviews-content .right .info{
+.projects .projects-content .right .info{
     display: flex;
     margin-bottom: 5px;
     align-items: center;
     justify-content: space-between;
 }
-.reviews .reviews-content .right span{
+.projects .projects-content .right span{
     font-weight: 500;
     font-size: 18px;
 }
-.reviews .reviews-content .right .line{
+.projects .projects-content .right .line{
     height: 5px;
     width: 100%;
     background: lightgrey;
     position: relative;
 }
-.reviews .reviews-content .right .line::before{
+.projects .projects-content .right .line::before{
     content: "";
     position: absolute;
     height: 100%;
@@ -433,19 +433,19 @@ section .title::after{
     top: 0;
     background: #006972;
 }
-.reviews-content .right .html::before{
+.projects-content .right .html::before{
     width: 90%;
 }
-.reviews-content .right .css::before{
+.projects-content .right .css::before{
     width: 60%;
 }
-.reviews-content .right .js::before{
+.projects-content .right .js::before{
     width: 80%;
 }
-.reviews-content .right .php::before{
+.projects-content .right .php::before{
     width: 50%;
 }
-.reviews-content .right .mysql::before{
+.projects-content .right .mysql::before{
     width: 70%;
 }
 
@@ -695,7 +695,7 @@ footer span a:hover{
         width: calc(50% - 10px);
         margin-bottom: 20px;
     }
-    .reviews .reviews-content .column,
+    .projects .projects-content .column,
     .contact .contact-content .column{
         width: 100%;
         margin-bottom: 35px;
@@ -728,7 +728,7 @@ footer span a:hover{
         font-size: 27px;
     }
     .about .about-content .right .text,
-    .reviews .reviews-content .left .text{
+    .projects .projects-content .left .text{
         font-size: 19px;
     }
     .contact .right form .fields{
