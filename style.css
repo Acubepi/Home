@@ -7,6 +7,7 @@
     box-sizing: border-box;
     text-decoration: none;
 }
+
 html{
     scroll-behavior: smooth;
 }
@@ -183,6 +184,7 @@ section .title::after{
     background-size: cover;
     background-attachment: fixed;
     font-family: 'Ubuntu', sans-serif;
+    width: 100%;
 }
 
 .home .max-width {
@@ -241,8 +243,8 @@ section .title::after{
 }
 
 .about .about-content .left .text {
-  font-size: 25px;
-    font-weight: 600;
+  font-size: 35px;
+    font-weight: 700;
     margin-bottom: 10px;
 }
 
@@ -255,8 +257,8 @@ section .title::after{
 }
 
 .about .about-content .right .text {
-    font-size: 25px;
-    font-weight: 600;
+    font-size: 35px;
+    font-weight: 700;
     margin-bottom: 10px;
 }
 
@@ -286,7 +288,7 @@ section .title::after{
 }
 .flip-card {
     background-color: transparent;
-    height: 200px;
+    height: 210px;
     perspective: 1000px;
     width: 100%;
       text-align: center;
@@ -294,6 +296,7 @@ section .title::after{
       
       cursor: pointer;
       transition: all 0.3s ease;
+      margin: 10px;
       
   }
   
@@ -375,11 +378,56 @@ section .title::after{
 }
 
 /* projects section styling */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: 5%;
+    text-align: center;
+    font-family: arial;
+    border-radius: 10px;
+    display: inline-block;
+    width: 300px;
+    
+  }
+  
+  .price {
+    color: grey;
+    font-size: 22px;
+  }
+  
+  .card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    align-self: center;
+    height: 15%;
+    
+  }
+  .card p {
+     align-items: center;
+     text-align: center;
+     padding: 10px;
+  } 
+  .card .p#btn{
+      padding-left: 20px;
+      width: 1000px;
+
+  }
+  }
+  .card button:hover {
+    opacity: 0.7;
+  }
 
 .projects .title::after{
     content: "projects";
 }
-.projects .projects-content .column{
+/*.projects .projects-content .column{
     width: calc(50% - 30px);
 }
 .projects .projects-content .left .text{
@@ -387,6 +435,7 @@ section .title::after{
     font-weight: 600;
     margin-bottom: 10px;
 }
+*/
 .projects .projects-content .left p{
     text-align: justify;
 }
